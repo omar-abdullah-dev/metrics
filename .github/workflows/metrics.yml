@@ -21,3 +21,7 @@ jobs:
           plugin_activity_limit: 5
           plugin_activity_days: 0
           plugin_activity_filter: all
+
+          # Streaks
+          plugin_streak: yes
+          plugin_streak_days: yes
