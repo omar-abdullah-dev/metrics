@@ -17,11 +17,19 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 0
-          plugin_activity_filter: all
+          # =====================
+          # 🧮 Core
+          # =====================
+          base: header, activity, community, repositories, metadata
 
-          # Streaks
+          # =====================
+          # 🔥 Streaks
+          # =====================
           plugin_streak: yes
           plugin_streak_days: yes
+          plugin_streak_limit: 0
+
+          # =====================
+          # ❌ Disable buggy activity plugin
+          # =====================
+          plugin_activity: no
